@@ -74,7 +74,7 @@ export default function Home() {
       alt="cliff" 
       width={500} 
       height={500} 
-      className="w-screen h-screen"
+      className=""
       />
     </div>
 
