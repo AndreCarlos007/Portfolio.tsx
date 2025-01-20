@@ -5,9 +5,9 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <main className="w-screen h-screen" >
+    <main className="w-screen h-screen " >
     <div
-      className="flex  w-full h-full  bg-cover bg-center"
+      className="flex  w-screen  h-screen  bg-cover bg-center"
       style={{ backgroundImage: "url(/main-bg.webp)" }}
     >
       <div className=" md:pl-40  md:pt-36 flex flex-col gap-5 z-[10] max-w-[750px] ">
@@ -47,14 +47,14 @@ export default function Home() {
       </div>
     </div>
 
-    <div className="absolute flex bottom-10 z-[20] right-5 flex-col md:hidden gap-5">
-      <Link href="/my-skills" className="rounded-[20px] group bg-blue-500 px-5 py-3 text-lg text-white max-w-[200px]">
+    <div className="absolute flex bottom-20 z-[20] right-5 flex-col md:hidden gap-5">
+      <Link href="/my-skills" className="rounded-[20px] group bg-blue-500 px-5 py-3 text-xm text-white max-w-[125px]">
         Learn more
       </Link>
-      <Link href="/my-projects" className="rounded-[20px] group bg-trasparent border border-white px-5 py-3 text-lg text-white max-w-[200px]">
+      <Link href="/my-projects" className="rounded-[20px] group bg-trasparent border border-white px-5 py-3 text-xm text-white max-w-[125px]">
         My projects
       </Link>
-      <Link href="/contacte-me" className="rounded-[20px] group bg-trasparent border border-white px-5 py-3 text-lg text-white max-w-[200px]">
+      <Link href="/contacte-me" className="rounded-[20px] group bg-trasparent border border-white px-5 py-3 text-xm text-white max-w-[125px]">
         Contact me
       </Link>
 
@@ -64,16 +64,16 @@ export default function Home() {
       <Image
         src="/horse.png"
         alt="horse"
-        height={300}
-        width={300}
-        className="absolute right-55 top-40"
+        height={200}
+        width={115}
+        className="absolute right-48 top-40"
       />
 
       <Image 
       src="/cliff.webp" 
       alt="cliff" 
-      width={500} 
-      height={500} 
+      width={310} 
+      height={400}
       className=""
       />
     </div>
