@@ -75,19 +75,19 @@ export const SkillData = [
     height: 40,
   },
 ];
-
+  // ICONS DA NAVBAR 
 export const Socials = [
   {
+    name: "Linkedin",
+    src: "/linkedin.svg",
+  },
+  {
+    name: "Github",
+    src: "/github.svg",
+  },
+  {
     name: "Discord",
-    src: "/instagram.svg",
-  },
-  {
-    name: "Facebook",
-    src: "/facebook.svg",
-  },
-  {
-    name: "Instagram",
-    src: "/discord.svg",
+    src: "/discordnew.svg",
   },
 ];
 export const Projects = [
