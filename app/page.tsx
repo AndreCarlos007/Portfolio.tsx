@@ -20,8 +20,6 @@ export default function Home() {
         </h1>
         <p className="text-gray-200 hidden 2sm:block md:block">
         I create digital solutions that prioritize both aesthetics and usability. 
-          My portfolio showcases a variety of projects that demonstrate my expertise
-          in diverse technologies and innovative design approaches.
         </p>
         <div className="flex-col md:flex-row hidden md:flex gap-5">
           <Link
