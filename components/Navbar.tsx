@@ -1,3 +1,4 @@
+
 import Link from 'next/link'
 import React from 'react'
 
@@ -9,9 +10,9 @@ const Navbar = () => {
         </div>
 
         <div className='flex flex-row gap-3 mb-2'>
-            <a href="https://www.linkedin.com/in/andr%C3%A9-carloscx/" target='_blank'><img src="/linkedin.svg" alt="" /></a>
-            <a href="https://github.com/AndreCarlos007" target='_blank'><img src="/github.svg" alt="Github" /></a>
-            <a href="/"><img src="/discordnew.svg" alt="Discord" /></a>
+            <Link href="https://www.linkedin.com/in/andr%C3%A9-carloscx/" target='_blank'><img src="/linkedin.svg" alt="Linkedin" /></Link>
+            <Link href="https://github.com/AndreCarlos007" target='_blank'><img src="/github.svg" alt="Github" /></Link>
+            <Link href="/"><img src="/discordnew.svg" alt="Discord" /></Link>
           
         </div>
     </div>
