@@ -10,15 +10,15 @@ export default function Home() {
       className="flex  w-screen  h-screen  bg-cover bg-center"
       style={{ backgroundImage: "url(/main-bg.webp)" }}
     >
-      <div className="sm:pl-10 sm:pt-32 sm:max-w-[300px] 2sm:max-w-[350px] md:pl-40 md:pt-36 flex flex-col gap-5 z-[10] max-w-[800px] ">
-        <h1 className="text-[50px] text-white hidden sm:block sm:text-[1.4rem] sm:font-semibold 2sm:font-semibold ">
+      <div className="sm:pl-10 sm:pt-28 sm:max-w-[320px] md:pl-40 md:pt-36 flex flex-col gap-5 z-[50] ">
+        <h1 className="text-[50px] text-white hidden sm:block sm:text-[1.4rem] sm:font-semibold  ">
           Make anything possible with
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
             {" "}
             Web Development
           </span>
         </h1>
-        <p className="text-gray-200 hidden 2sm:block md:block">
+        <p className="text-gray-200 hidden sm:block  md:block">
         I create digital solutions that prioritize both aesthetics and usability. 
         </p>
         <div className="flex-col md:flex-row hidden md:flex gap-5">
