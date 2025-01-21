@@ -75,21 +75,7 @@ export const SkillData = [
     height: 40,
   },
 ];
-  // ICONS DA NAVBAR 
-export const Socials = [
-  {
-    name: "Linkedin",
-    src: "/linkedin.svg",
-  },
-  {
-    name: "Github",
-    src: "/github.svg",
-  },
-  {
-    name: "Discord",
-    src: "/discordnew.svg",
-  },
-];
+ 
 export const Projects = [
   {
     title: "Modern Nextjs Website",
