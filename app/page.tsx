@@ -74,8 +74,9 @@ export default function Home() {
       className="md:w-[500px] lg:w-[600px] lg:h-[600px] pointer-events-none"
       />
     </div>
-
-    <div className="absolute bottom-0 z-[5] w-full h-auto">
+    
+      {/* FUNDO SECUNDARIO COM ARVORES  */}
+    {/* <div className="absolute bottom-0 z-[5] w-full h-auto">
       <Image
         src="/trees.webp"
         alt="trees"
@@ -83,7 +84,7 @@ export default function Home() {
         height={2000}
         className="w-full h-full pointer-events-none"
       />
-    </div>
+    </div> */}
 
     <Image
       src="/stars.png"
