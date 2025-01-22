@@ -67,7 +67,7 @@ export default function IconCloud({ iconSlugs }: IconCloudProps) {
   }, [data]);
 
   return (
-    // @ts-expect-error
+    // @ts-expect-error: Esse erro aqui é esperado
     <Cloud {...cloudProps}>
       {renderedIcons}
     </Cloud>
