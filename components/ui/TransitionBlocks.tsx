@@ -27,7 +27,7 @@ const TransitionBlocks = () => {
             initial={{ opacity: 1 }} // Estado inicial com opacidade total
             animate={{
               opacity: 0, // Animação para desaparecer (opacidade zero)
-              transition: { delay: 1, duration: 0.4, ease: 'backInOut' }, // Configuração de tempo e estilo da transição
+              transition: { delay: 1.5, duration: 1, ease: 'backInOut' }, // Configuração de tempo e estilo da transição
             }}
           />
         </div>
