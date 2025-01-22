@@ -43,7 +43,7 @@ export default function Home() {
         </div>
       </div>
     </div>
-          {/* BOTOES PARA CELULARES */}
+          {/* BOTOES PARA CELULARES E TABLETS*/}
     <div className="absolute flex bottom-20 z-[20] right-5 flex-col md:hidden gap-5">
       <Link href="/my-skills" className="px-6 py-2 font-medium bg-gradient-to-r from-purple-950 to-red-000 text-white w-fit transition-all shadow-[2px_2px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-md max-w-[200px]">
         My Skills

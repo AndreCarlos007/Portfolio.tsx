@@ -11,7 +11,7 @@ export const cloudProps = {
       alignItems: 'center',
       width: '100%',
       height: 'auto',
-      paddingTop: 40,
+      paddingTop: 0,
     },
   },
   options: {
