@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import { Cloud, fetchSimpleIcons, renderSimpleIcon } from 'react-icon-cloud';
+import { Cloud, fetchSimpleIcons, renderSimpleIcon, SimpleIcon } from 'react-icon-cloud';
 
 export const cloudProps = {
   containerProps: {
@@ -31,7 +31,7 @@ export const cloudProps = {
   },
 };
 
-export const renderCustomIcon = (icon: any) => {
+export const renderCustomIcon = (icon: SimpleIcon) => {
   return renderSimpleIcon({
     icon,
     bgHex: '#f3f2ef', // Cor de fundo para todos os ícones
@@ -52,7 +52,7 @@ interface IconCloudProps {
 }
 
 export default function IconCloud({ iconSlugs }: IconCloudProps) {
-  const [data, setData] = useState<any | null>(null);
+  const [data, setData] = useState<{ simpleIcons: Record<string, SimpleIcon> } | null>(null);
 
   useEffect(() => {
     fetchSimpleIcons({ slugs: iconSlugs }).then(setData);
@@ -61,13 +61,13 @@ export default function IconCloud({ iconSlugs }: IconCloudProps) {
   const renderedIcons = useMemo(() => {
     if (!data) return null;
 
-    return Object.values(data.simpleIcons).map((icon: any) =>
+    return Object.values(data.simpleIcons).map((icon: SimpleIcon) =>
       renderCustomIcon(icon)
     );
   }, [data]);
 
   return (
-    // @ts-ignore
+    // @ts-expect-error
     <Cloud {...cloudProps}>
       {renderedIcons}
     </Cloud>
