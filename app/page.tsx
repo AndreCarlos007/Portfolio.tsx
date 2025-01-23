@@ -26,13 +26,13 @@ export default function Home() {
             href="/my-skills"
             className="px-6 py-2 font-medium bg-gradient-to-r from-purple-950 to-red-000 text-white w-fit transition-all shadow-[1px_1px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-md max-w-[200px]"
           >
-            My Skills
+            Skills
           </Link>
           <Link
             href="/my-projects"
             className="px-6 py-2 font-medium bg-gradient-to-r from-purple-950 to-red-000 text-white w-fit transition-all shadow-[1px_1px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-md max-w-[200px]"
           >
-            My projects
+            Projects
           </Link>
           <Link
             href="/contacte-me"
@@ -44,14 +44,15 @@ export default function Home() {
       </div>
     </div>
           {/* BOTOES PARA CELULARES E TABLETS*/}
-    <div className="absolute flex bottom-20 z-[20] right-5 flex-col md:hidden gap-5">
-      <Link href="/my-skills" className="px-6 py-2 font-medium bg-gradient-to-r from-purple-950 to-red-000 text-white w-fit transition-all shadow-[2px_2px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-md max-w-[200px]">
-        My Skills
+    <div className="absolute pb-6 pr-1 flex bottom-20 z-[60] right-5 flex-col md:hidden gap-5">
+      <Link href="/my-skills" className="px-6 py-2  font-medium bg-gradient-to-r from-purple-950 to-red-000 text-white  transition-all shadow-[2px_2px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-md max-w-[150px] block text-center">
+        Skills
       </Link>
-      <Link href="/my-projects" className="px-6 py-2 font-medium bg-gradient-to-r from-purple-950 to-red-000 text-white w-fit transition-all shadow-[2px_2px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-md max-w-[200px]">
-        My projects
+      <Link href="/my-projects" className="block px-6  py-2 font-medium bg-gradient-to-r from-purple-950 to-red-000 text-white transition-all shadow-[2px_2px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-md max-w-[150px] text-center">
+      Projects
       </Link>
-      <Link href="/contacte-me" className="px-6 py-2 font-medium bg-gradient-to-r from-purple-950 to-red-000 text-white w-fit transition-all shadow-[2px_2px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-md max-w-[200px]">
+
+      <Link href="/contacte-me" className="px-6 py-2  font-medium bg-gradient-to-r from-purple-950 to-red-000 text-white  transition-all shadow-[2px_2px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-md max-w-[150px] block text-center">
         Contact
       </Link>
     </div>
