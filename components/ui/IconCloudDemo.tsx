@@ -25,7 +25,8 @@ const slugs = [
   'windows',
   'php',
   'laravel',
-  'mysql'
+  'mysql',
+  'discord'
 ];
 
 export function IconCloudDemo() {
