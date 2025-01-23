@@ -12,7 +12,7 @@ const page = () => {
         <div className='text-center lg:text-left flex flex-col items-center lg:items-start gap-6 '>
           <h1 className='text-white text-[2rem] hidden sm:block sm:pt-44 md:pt-0 font-extrabold'>My <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500'
           >
-            projects
+            projects.
             </span>
           </h1>
           <p className='text-white hidden sm:block md:block md:max-w-[480px] max-w-[320px] lg:max-w-[420px] text-[0.9rem] text-justify'>
