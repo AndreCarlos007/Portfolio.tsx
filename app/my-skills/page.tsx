@@ -7,7 +7,7 @@ const page = () => {
     <div style={{backgroundImage: "url(/bg-2.jpg)" }}
     className='h-screen w-screen flex items-center justify-center bg-cover bg-center'>
       
-        <div className="flex justify-center ">
+        <div className="flex justify-center">
                 <IconCloudDemo />
               </div>
     </div>
