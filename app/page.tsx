@@ -14,7 +14,7 @@ export default function Home() {
           Make anything possible with
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
             {" "}
-            Software Development
+            Software Development.
           </span>
         </h1>
         <p className="text-gray-200 hidden sm:block md:block md:text-[1rem] text-justify">
