@@ -1,6 +1,8 @@
 import { RxHome, RxPerson, RxDashboard, RxClipboard } from "react-icons/rx";
 import { SiDatabricks } from "react-icons/si";
 
+//Icones da navegação
+
 export const NavLinks = [
   {
     name: "/",
