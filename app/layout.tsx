@@ -33,9 +33,9 @@ export default function RootLayout({
       >
         <Navbar />
         <TransitionBlocks />
-        <TransitionPage > 
+        <TransitionPage >  
         {children}
-         </TransitionPage> 
+        </TransitionPage>
         <Navigation />
         
        

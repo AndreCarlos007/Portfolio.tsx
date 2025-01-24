@@ -102,7 +102,7 @@ const Page: React.FC = () => {
           <button
             type="submit"
             className={`text-white h-[52px] rounded-full border border-white/30 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-purple-800 group ${
-              isFormValid() ? "" : "opacity-50 cursor-not-allowed"
+              isFormValid() ? "" : "opacity-10 cursor-not-allowed text-opacity-0"
             }`}
             disabled={!isFormValid()}
           >
