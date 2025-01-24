@@ -26,7 +26,12 @@ const slugs = [
   'php',
   'laravel',
   'mysql',
-  'discord'
+  'discord',
+  'axios',
+  'npm',
+  'laragon',
+  'prisma',
+  'adonisjs'
 ];
 
 export function IconCloudDemo() {
