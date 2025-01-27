@@ -106,7 +106,6 @@ const Page: React.FC = () => {
             className="w-full h-[120px] p-6 rounded-lg resize-none bg-transparent outline-none focus:ring-1 focus:ring-purple-800 border border-white/10 placeholder:text-white/30 placeholder:font-light"
           ></textarea>
 
-
           {/* Botão de envio desabilitado se o formulário for inválido ou se o envio já estiver em andamento */}
           <button
             type="submit"
