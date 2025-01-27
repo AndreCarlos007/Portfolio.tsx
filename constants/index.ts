@@ -26,8 +26,8 @@ export const NavLinks = [
     link: "/my-projects",
   },
   {
-    name: "/contacte-me",
+    name: "/contact-me",
     icon: RxClipboard,
-    link: "/contacte-me",
+    link: "/contact-me",
   },
 ];

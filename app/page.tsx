@@ -41,7 +41,7 @@ export default function Home() {
             Projects
           </Link>
           <Link
-            href="/contacte-me"
+            href="/contact-me"
             className="px-6 py-2 font-medium bg-gradient-to-r from-purple-950 to-red-000 text-white w-fit transition-all shadow-[1px_1px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-md max-w-[200px]"
           >
             Contact
@@ -65,7 +65,7 @@ export default function Home() {
       Projects
       </Link>
 
-      <Link href="/contacte-me" className="px-6 py-2  font-medium bg-gradient-to-r from-purple-950 to-red-000 text-white  transition-all shadow-[2px_2px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-md max-w-[150px] block text-center">
+      <Link href="/contact-me" className="px-6 py-2  font-medium bg-gradient-to-r from-purple-950 to-red-000 text-white  transition-all shadow-[2px_2px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-md max-w-[150px] block text-center">
         Contact
       </Link>
     </div>
