@@ -47,7 +47,7 @@ const Navigation = () => {
           <Link key={nav.name} href={nav.link} className="mb-16 pl- min-w-[15%]">
             {/* Ícone correspondente ao link */}
             <nav.icon
-              className={`w-[22px] h-[24px] ${
+              className={`w-[22px] h-[24px] hover:w-[25px] transition-all duration-300 ${
                 path === nav.name ? "text-purple-700" : "text-white"
               }`} // Aplica a cor ao ícone dependendo se é a rota ativa ou não
             />

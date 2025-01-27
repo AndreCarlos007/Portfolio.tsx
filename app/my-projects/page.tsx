@@ -7,7 +7,7 @@ const page = () => {
     <div 
       style={{ backgroundImage: "url(/bg-2.jpg)" }}
       className='flex items-center justify-center w-screen h-screen bg-cover bg-center'>
-      <div className='flex flex-col lg:flex-row items-center gap-12'>
+      <div className='flex flex-col lg:flex-row items-center gap-12 '>
         {/* Text Section */}
         <div className='text-center lg:text-left flex flex-col items-center lg:items-start gap-6 '>
           <h1 className='text-white text-[2rem] hidden sm:block sm:pt-44 md:pt-0 font-extrabold'>My <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500'

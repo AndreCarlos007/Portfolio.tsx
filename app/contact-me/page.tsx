@@ -59,9 +59,9 @@ const Page: React.FC = () => {
   return (
     <div
       style={{ backgroundImage: "url(/bg-2.jpg)" }}
-      className="h-screen w-screen items-center justify-center flex bg-cover bg-center overflow-scroll sm:overflow-hidden"
+      className="h-screen w-screen items-center justify-center flex bg-cover bg-center overflow-scroll sm:overflow-hidden "
     >
-      <div className="flex flex-col w-full max-w-[300px] sm:max-w-[340px] md:max-w-[600px] mt-72 mb-36 sm:mt-36 md:mt-0 md:mb-0">
+      <div className="flex flex-col w-full max-w-[300px] sm:max-w-[340px] md:max-w-[600px] mt-72 mb-36 sm:mt-36 md:mt-0 md:mb-0 p-2 bg-gray-500 rounded-xl bg-clip-padding backdrop-filter backdrop-blur-sm  border-2 border-[#ffffff10] bg-opacity-5">
         <h2 className="text-white text-[2rem] font-bold mb-3 text-center">
           Let&apos;s{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
@@ -83,7 +83,7 @@ const Page: React.FC = () => {
             />
             <input
               type="email"
-              placeholder="email"
+              placeholder="Email"
               name="email"
               value={formData.email}
               onChange={handleInputChange}
@@ -92,14 +92,14 @@ const Page: React.FC = () => {
           </div>
           <input
             type="text"
-            placeholder="subject"
+            placeholder="Subject"
             name="subject"
             value={formData.subject}
             onChange={handleInputChange}
             className="w-full h-[40px] rounded-lg pl-6 bg-transparent border border-white/10 outline-none focus:ring-1 focus:ring-purple-800 placeholder:text-white/30 placeholder:font-light"
           />
           <textarea
-            placeholder="message"
+            placeholder="Message"
             name="message"
             value={formData.message}
             onChange={handleInputChange}

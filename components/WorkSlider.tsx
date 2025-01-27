@@ -60,7 +60,7 @@ const WorkSlider: FC = () => {
     >
       {workSlides.slides.map((slide, slideIndex) => (
         <SwiperSlide key={slideIndex}>
-          <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">
+          <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer ">
             {slide.images.map((image, imageIndex) => (
               <Link key={imageIndex} href={image.link} target='_blank'>
               <div
