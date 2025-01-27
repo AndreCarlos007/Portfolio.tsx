@@ -61,7 +61,7 @@ const Page: React.FC = () => {
       style={{ backgroundImage: "url(/bg-2.jpg)" }}
       className="h-screen w-screen items-center justify-center flex bg-cover bg-center overflow-scroll sm:overflow-hidden "
     >
-      <div className="flex flex-col w-full max-w-[300px] sm:max-w-[340px] md:max-w-[600px] mt-72 mb-36 sm:mt-36 md:mt-0 md:mb-0 p-2 bg-gray-500 rounded-xl bg-clip-padding backdrop-filter backdrop-blur-sm  border-2 border-[#ffffff10] bg-opacity-5">
+      <div className="flex flex-col w-full max-w-[300px] sm:max-w-[340px] md:max-w-[600px] mt-72 mb-36 sm:mt-36 md:mt-0 md:mb-0 ">
         <h2 className="text-white text-[2rem] font-bold mb-3 text-center">
           Let&apos;s{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
@@ -72,7 +72,7 @@ const Page: React.FC = () => {
           className="text-white flex-1 flex flex-col gap-6 w-full mx-auto"
           onSubmit={handleSubmit}
         >
-          <div className="flex gap-x-6 w-full">
+          <div className="flex gap-x-6 w-full ">
             <input
               type="text"
               placeholder="name"
