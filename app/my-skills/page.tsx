@@ -10,7 +10,7 @@ const page = () => {
         <div className="flex flex-col lg:flex-row items-center gap-10  mt-80 mb-36 sm:mt-56 sm:mb-40 md:mb-0 md:mt-0">
           <div className='order-2 lg:order-1 md:ml-20'>
           <h1 className='text-white font-bold text-[1.6rem] text-center sm:text-[2rem] pb-7'>My <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500 font-bold'>skills.</span></h1>
-            <div className='max-w-[280px] sm:max-w-[320px] '>
+            <div className='max-w-[280px] sm:max-w-[320px] select-none '>
             <SkillsSlider />
             </div>
           </div>
