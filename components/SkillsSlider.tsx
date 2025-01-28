@@ -127,7 +127,7 @@ const TechnologySlider: FC = () => {
     >
       {technologyData.map((tech, index) => (
         <SwiperSlide key={index}>
-          <div className="p-6 bg-gradient-to-r border-1 border-purple-400 bg-purple-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60  text-white flex flex-col items-center text-center shadow-none">
+          <div className="p-6 bg-gradient-to-r border-1 border-purple-400 bg-purple-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60  text-white flex flex-col items-center text-center shadow-none">
             {tech.icon}
             <h2 className="text-[1rem] font-bold mt-4">{tech.name}</h2>
             <p className="text-[0.9rem] text-[#FFFFFF99] mt-2">{tech.description}</p>

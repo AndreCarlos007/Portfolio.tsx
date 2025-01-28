@@ -53,7 +53,7 @@ const EducationSlider: FC = () => {
     >
       {educationData.map((education, index) => (
         <SwiperSlide key={index}>
-          <div className="p-6 bg-gradient-to-r border-1 border-purple-400 bg-purple-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-80 rounded-lg shadow-lg text-white">
+          <div className="p-6 bg-gradient-to-r border-1 border-purple-400 bg-purple-900 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-80 rounded-lg shadow-lg text-white">
             <h2 className="text-[1rem] font-bold mb-2 flex">
               {education.course}
               <p className="text-white">
