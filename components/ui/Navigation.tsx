@@ -34,20 +34,21 @@ const Navigation = () => {
 
   // Renderização do componente
   return (
-    <div className="relative h-full">
+    <div className="flex flex-col items-center md:justify-center gap-y-4 fixed h-max bottom-0 mt-auto md:right-[2%] z-50 top-0 w-full
+    md:w-16 md:max-w-md md:h-screen ">
       <div
         // Posiciona o menu na horizontal com margem à esquerda de 20%
-        className="left-[17%] md:left-[20%] fixed gap-1 z-[50] -bottom-20 w-[70%] md:w-[60%] lg:w-[32%] max-h-[150px] rounded-full flex justify-between items-center  bg-[#00000077] md:pl-16 px-7 py-7 overflow-hidden"
+        className="flex w-full md:flex-col items-center justify-between md:justify-center gap-y-10 px-4 sm:px-6 md:px-0 h-[80px] 
+        md:h-max py-8 bg-[#0000008a] backdrop-blur-sm text-3xl md:text-xl rounded-t-[3rem] md:rounded-full"
       >
         {/* Estado de transição */}
         {isRouting}
-
         {/* Itera sobre o array de links de navegação e renderiza cada link */}
         {NavLinks.map((nav) => (
-          <Link key={nav.name} href={nav.link} className="mb-16 pl- min-w-[15%]">
+          <Link key={nav.name} href={nav.link} className="">
             {/* Ícone correspondente ao link */}
             <nav.icon
-              className={`w-[22px] h-[24px] hover:w-[25px] transition-all duration-300 ${
+              className={`w-[40px] hover:h-[42px] transition-all duration-300 ${
                 path === nav.name ? "text-purple-700" : "text-white"
               }`} // Aplica a cor ao ícone dependendo se é a rota ativa ou não
             />
