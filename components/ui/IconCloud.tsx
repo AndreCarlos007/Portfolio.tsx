@@ -20,23 +20,24 @@ export const cloudProps = {
     wheelZoom: false,
     imageScale: 2,
     activeCursor: 'default',
-    tooltip: 'native',
-    initial: [0.1, -0.1], // Define o ponto inicial da animação
+    tooltip: 'native' as 'native', // Assertão de tipo para 'native'
+    initial: [0.1, -0.1],
     clickToFront: 500,
     tooltipDelay: 0,
     outlineColour: '#0000',
-    maxSpeed: 0.03, // Velocidade máxima da animação
-    minSpeed: 0.01, // Velocidade mínima da animação
+    maxSpeed: 0.03,
+    minSpeed: 0.01,
     dragControl: false,
   },
 };
 
+// O restante do código permanece inalterado
 export const renderCustomIcon = (icon: SimpleIcon) => {
   return renderSimpleIcon({
     icon,
-    bgHex: '#f3f2ef', // Cor de fundo para todos os ícones
-    fallbackHex: '#6e6e73', // Cor de fallback para todos os ícones
-    minContrastRatio: 1.2, // Contraste mínimo
+    bgHex: '#f3f2ef',
+    fallbackHex: '#6e6e73',
+    minContrastRatio: 1.2,
     size: 50,
     aProps: {
       href: undefined,
@@ -67,7 +68,6 @@ export default function IconCloud({ iconSlugs }: IconCloudProps) {
   }, [data]);
 
   return (
-    // @ts-expect-error: Esse erro aqui é esperado
     <Cloud {...cloudProps}>
       {renderedIcons}
     </Cloud>
