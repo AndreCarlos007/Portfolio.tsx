@@ -1,10 +1,14 @@
 "use client"; // Indica que o componente deve ser renderizado no cliente
-import AboutSlider from '@/components/AboutSlider' // Importa o componente AboutSlider para exibir informações educacionais
 import Link from 'next/link'; // Importa o componente Link do Next.js para navegação interna
 import React from 'react'; // Importa React para criar o componente funcional
+import dynamic from "next/dynamic";
+import { useInView } from "react-intersection-observer";
+
+const AboutSlider = dynamic(() => import("@/components/AboutSlider").then(mod => mod.default), { ssr: false });
 
 // Função principal que representa a página
-const page = () => {
+const page: React.FC = () => {
+  const { ref, inView } = useInView({ triggerOnce: true });
   return (
     // Contêiner principal da página com fundo personalizado e layout responsivo
     <div 
@@ -46,8 +50,8 @@ const page = () => {
         </h1>
         
         {/* Componente slider para exibir informações educacionais */}
-        <div className='select-none'>
-        <AboutSlider />
+        <div className='select-none' ref={ref}>
+        {inView && <AboutSlider />}
         </div>
         
       </div>
