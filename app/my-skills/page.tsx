@@ -8,13 +8,20 @@ const IconCloudDemo = dynamic(() => import('@/components/ui/IconCloudDemo'), { s
 const SkillsSlider = dynamic(() => import('@/components/SkillsSlider'), { ssr: false })
 
 const Page: React.FC = () => {
-  const { ref, inView } = useInView({ triggerOnce: true }) // Corrigida a importação e uso correto
+  const { ref, inView } = useInView({ triggerOnce: true, delay: 100 }) // Corrigida a importação e uso correto
 
   return (
     <div
       style={{ backgroundImage: "url(/bg-2.AVIF)" }}
       className="h-screen w-screen flex items-center justify-center bg-cover bg-center overflow-scroll md:overflow-hidden"
     >
+      <link
+            rel="preload"
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+            as="style"
+            type="font/woff2"
+            crossOrigin='anonymous'
+          />
       <div className="flex flex-col lg:flex-row items-center gap-10 mt-80 mb-36 sm:mt-56 sm:mb-40 md:mb-0 md:mt-0">
         <div className="order-2 lg:order-1 md:ml-20">
           <h1 className="text-white font-bold text-[1.6rem] text-center sm:text-[2rem] pb-7">
