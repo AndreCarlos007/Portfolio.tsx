@@ -12,7 +12,7 @@ const Page: React.FC = () => {
 
   return (
     <div
-      style={{ backgroundImage: "url(/bg-2.jpg)" }}
+      style={{ backgroundImage: "url(/bg-2.AVIF)" }}
       className="flex items-center justify-center w-screen h-screen bg-cover bg-center"
     >
       <div className="flex flex-col lg:flex-row items-center gap-12">

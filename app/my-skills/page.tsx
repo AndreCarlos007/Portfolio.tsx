@@ -12,7 +12,7 @@ const Page: React.FC = () => {
 
   return (
     <div
-      style={{ backgroundImage: "url(/bg-2.jpg)" }}
+      style={{ backgroundImage: "url(/bg-2.AVIF)" }}
       className="h-screen w-screen flex items-center justify-center bg-cover bg-center overflow-scroll md:overflow-hidden"
     >
       <div className="flex flex-col lg:flex-row items-center gap-10 mt-80 mb-36 sm:mt-56 sm:mb-40 md:mb-0 md:mt-0">

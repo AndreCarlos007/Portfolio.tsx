@@ -12,7 +12,7 @@ const Page: React.FC = () => {
   return (
     // Contêiner principal da página com fundo personalizado e layout responsivo
     <div 
-      style={{backgroundImage: "url(/bg-2.jpg)" }} // Adiciona a imagem de fundo
+      style={{backgroundImage: "url(/bg-2.AVIF)" }} // Adiciona a imagem de fundo
       className='flex flex-col md:flex-row overflow-scroll md:overflow-hidden items-center justify-center w-screen h-screen bg-cover bg-center text-white gap-10 sm:gap-10 md:gap-8 lg:gap-32'>
       
       {/* Seção da biografia */}
