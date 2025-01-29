@@ -1,4 +1,3 @@
-"use client"; // Indica que o componente deve ser renderizado no cliente
 import AboutSlider from '@/components/AboutSlider' // Importa o componente AboutSlider para exibir informações educacionais
 import Link from 'next/link'; // Importa o componente Link do Next.js para navegação interna
 import React from 'react'; // Importa React para criar o componente funcional

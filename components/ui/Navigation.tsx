@@ -1,4 +1,3 @@
-"use client";
 import { NavLinks } from "@/constants";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
