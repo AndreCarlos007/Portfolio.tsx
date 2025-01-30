@@ -11,15 +11,15 @@ const Navbar = () => {
         </div>
 
         <div className='flex flex-row gap-3 mb-2'>
-          <div className='bg-gray-400 p-[0.50rem] rounded-full hover:bg-purple-950 transition-all duration-150'>
+          <div className='bg-[#FFFFFF99] p-[0.50rem] rounded-full hover:bg-purple-700 transition-all duration-150'>
           <Link href="https://www.linkedin.com/in/andr%C3%A9-carloscx" rel="noopener noreferrer" target='_blank'><Image width={40} height={40} loading='lazy' src="/linkedin.svg" alt="Linkedin" /></Link>
           </div>
           
-          <div className='bg-gray-400 p-[0.50rem] rounded-full hover:bg-purple-950 transition-all duration-150'>
+          <div className='bg-[#FFFFFF99] p-[0.50rem] rounded-full hover:bg-purple-700 transition-all duration-150'>
           <Link href="https://github.com/AndreCarlos007" rel="noopener noreferrer" target='_blank'><Image width={40} height={40} loading='lazy'  src="/github.svg" alt="Github" /></Link>
           </div>
             
-          <div className='bg-gray-400 p-[0.50rem] rounded-full hover:bg-purple-950 transition-all duration-150'>
+          <div className='bg-[#FFFFFF99] p-[0.50rem] rounded-full hover:bg-purple-700 transition-all duration-150'>
           <Link href="/curriculoAndre.pdf" rel="noopener noreferrer" target='_blank' ><Image width={40} height={40} loading='lazy'   src="/curriculum.AVIF" alt="Discord" /></Link>
           </div>
             
