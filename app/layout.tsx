@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/ui/Navbar";
 import Navigation from "@/components/ui/Navigation";
 import TransitionPage from "@/components/ui/TransitionPage";
 import TransitionBlocks from "@/components/ui/TransitionBlocks";
+import { Metadata } from "next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
