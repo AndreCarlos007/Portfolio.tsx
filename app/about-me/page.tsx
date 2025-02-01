@@ -46,7 +46,10 @@ const page = () => {
         </h1>
         
         {/* Componente slider para exibir informações educacionais */}
+        <div className='select-none'>
         <AboutSlider />
+        </div>
+        
       </div>
     </div>
   )
