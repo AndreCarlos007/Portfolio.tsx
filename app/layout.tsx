@@ -38,7 +38,6 @@ export default function RootLayout({
         </TransitionPage>
         <Navigation />
         
-       
       </body>
     </html>
   );

@@ -46,7 +46,7 @@ export default function Home() {
         className="absolute right-48 top-40 md:w-[350px] md:top-32 md:right-44 lg:top-4 lg:right-72 pointer-events-none"
         priority
       />
-
+      {/* Montanha */}
       <Image 
       src="/cliff.webp" 
       alt="cliff" 
