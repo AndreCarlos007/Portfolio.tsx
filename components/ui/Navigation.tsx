@@ -37,7 +37,7 @@ const Navigation = () => {
     <div className="relative h-full">
       <div
         // Posiciona o menu na horizontal com margem à esquerda de 20%
-        className="left-[17%] md:left-[20%] fixed gap-1 z-[50] -bottom-20 w-[70%] md:w-[60%] lg:w-[32%] max-h-[150px] rounded-full flex justify-between items-center border bg-black border-[#ffffff14] md:pl-16 px-7 py-7 overflow-hidden"
+        className="left-[17%] md:left-[20%] fixed gap-1 z-[50] -bottom-20 w-[70%] md:w-[60%] lg:w-[32%] max-h-[150px] rounded-full flex justify-between items-center  bg-[#00000077] md:pl-16 px-7 py-7 overflow-hidden"
       >
         {/* Estado de transição */}
         {isRouting}
