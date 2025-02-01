@@ -11,10 +11,8 @@ const slugs = [
   'tailwindcss',
   'nextdotjs',
   'prisma',
-  'postgresql',
   'mongodb',
   'vercel',
-  'android',
   'docker',
   'git',
   'github',
@@ -23,15 +21,19 @@ const slugs = [
   'linkedin',
   'vite',
   'windows',
-  'php',
-  'laravel',
   'mysql',
   'discord',
   'axios',
   'npm',
   'laragon',
   'prisma',
-  'adonisjs'
+  'adonisjs',
+  'amazonwebservices',
+  'terraform',
+  '	claude',
+  'openai',
+  'kubernetes',
+  
 ];
 
 export function IconCloudDemo() {
