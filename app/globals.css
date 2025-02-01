@@ -5,6 +5,7 @@
 
 body {
     font-family: 'JetBrains', monospace;
+    font-display: swap;
     overflow: hidden;
 }
 /* Estiliza toda a barra de rolagem */

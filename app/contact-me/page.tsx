@@ -61,6 +61,20 @@ const Page: React.FC = () => {
       style={{ backgroundImage: "url(/bg-2.AVIF)" }}
       className="h-screen w-screen items-center justify-center flex bg-cover bg-center overflow-scroll sm:overflow-hidden "
     >
+      <link
+            rel="preload"
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+            as="style"
+            type="font/woff2"
+            crossOrigin='anonymous'
+          />
+          <link
+            rel="preload"
+            href="/bg-2.AVIF"
+            as="image"
+            type="image/avif"
+            sizes="100vw"
+          />
       <div className="flex flex-col w-full max-w-[300px] sm:max-w-[340px] md:max-w-[600px] mt-72 mb-36 sm:mt-36 md:mt-0 md:mb-0 ">
         <h2 className="text-white text-[2rem] font-bold mb-3 text-center">
           Let&apos;s{" "}
