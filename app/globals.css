@@ -6,10 +6,6 @@
 body {
     font-family: 'JetBrains', monospace;
     overflow: hidden;
-    -webkit-user-select: none; 
-    -moz-user-select: none; 
-    -ms-user-select: none; 
-    user-select: none;
 }
 /* Estiliza toda a barra de rolagem */
 ::-webkit-scrollbar {
