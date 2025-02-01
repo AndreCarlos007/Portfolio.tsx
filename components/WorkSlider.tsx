@@ -5,6 +5,7 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import { FC } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import {BsArrowRight} from 'react-icons/bs'
 
@@ -12,6 +13,7 @@ import {BsArrowRight} from 'react-icons/bs'
 type ImageType = {
   title: string;
   path: string;
+  link: string;
 };
 
 type SlideType = {
@@ -27,18 +29,18 @@ export const workSlides: WorkSlidesType = {
   slides: [
     {
       images: [
-        { title: 'title', path: '/work/thumb2.png' },
-        { title: 'title', path: '/work/thumb1.png' },
-        { title: 'title', path: '/work/thumb1.png' },
-        { title: 'title', path: '/work/thumb1.png' },
+        { title: 'title', path: '/work/thumb2.png', link: 'https://mv-p-cidade-consciente.vercel.app/'},
+        { title: 'title', path: '/work/thumb1.png', link: ''},
+        { title: 'title', path: '/work/thumb1.png', link: ''},
+        { title: 'title', path: '/work/thumb1.png', link: ''},
       ],
     },
     {
       images: [
-        { title: 'title', path: '/work/thumb1.png' },
-        { title: 'title', path: '/work/thumb1.png' },
-        { title: 'title', path: '/work/thumb1.png' },
-        { title: 'title', path: '/work/thumb1.png' },
+        { title: 'title', path: '/work/thumb1.png', link: ''},
+        { title: 'title', path: '/work/thumb1.png', link: ''},
+        { title: 'title', path: '/work/thumb1.png', link: ''},
+        { title: 'title', path: '/work/thumb1.png', link: ''},
       ],
     },
   ],
@@ -54,12 +56,13 @@ const WorkSlider: FC = () => {
         clickable: true,
       }}
       modules={[Pagination]}
-      className="h-[340px] "
+      className="h-[340px]"
     >
       {workSlides.slides.map((slide, slideIndex) => (
         <SwiperSlide key={slideIndex}>
           <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">
             {slide.images.map((image, imageIndex) => (
+              <Link key={imageIndex} href={image.link} target='_blank'>
               <div
                 key={imageIndex}
                 className="relative rounded-lg overflow-hidden flex items-center justify-center group"
@@ -82,6 +85,7 @@ const WorkSlider: FC = () => {
                     </div>
                 </div>
               </div>
+            </Link>
             ))}
           </div>
         </SwiperSlide>

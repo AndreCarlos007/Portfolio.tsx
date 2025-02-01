@@ -1,5 +1,6 @@
 "use client";
 import WorkSlider from '../../components/WorkSlider';
+import Link from 'next/link';
 
 const page = () => {
   return (
@@ -15,7 +16,7 @@ const page = () => {
             </span>
           </h1>
           <p className='text-white hidden sm:block md:block md:max-w-[480px] max-w-[320px] lg:max-w-[420px] text-[0.9rem] text-justify'>
-          I&apos;m working on projects focused on software development and technology to enhance <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500'>my skills. </span>
+          I&apos;m working on projects focused on software development and technology to enhance <Link href='/my-skills' className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500'>my skills. </Link>
           My goal is to create innovative solutions and grow as a developer.
           </p>
         </div>
