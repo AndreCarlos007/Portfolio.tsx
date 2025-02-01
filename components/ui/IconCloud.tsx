@@ -67,6 +67,7 @@ export default function IconCloud({ iconSlugs }: IconCloudProps) {
   }, [data]);
 
   return (
+    // @ts-ignore
     <Cloud {...cloudProps}>
       {renderedIcons}
     </Cloud>
