@@ -1,4 +1,5 @@
 import { RxHome, RxPerson, RxDashboard, RxClipboard } from "react-icons/rx";
+import { SiDatabricks } from "react-icons/si";
 
 export const NavLinks = [
   {
@@ -8,7 +9,7 @@ export const NavLinks = [
   },
   {
     name: "/my-skills",
-    icon: RxPerson,
+    icon: SiDatabricks,
     link: "/my-skills",
   },
   {
