@@ -35,53 +35,7 @@ export default function Home() {
         I create digital solutions that prioritize both aesthetics and usability. <span className="hidden lg:block">My name is <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500 font-bold">André Carlos.</span> This portfolio showcases a variety of projects that demonstrate my expertise
         in diverse technologies and innovative design approaches.</span>
         </p>
-        <div className="flex-col md:flex-row hidden md:flex gap-5">
-        <Link
-            href="/about-me"
-            className="px-6 py-2 font-medium bg-gradient-to-r from-purple-950 to-red-000 text-white w-fit transition-all shadow-[1px_1px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-md max-w-[200px]"
-          >
-            About-me
-          </Link>
-          <Link
-            href="/my-skills"
-            className="px-6 py-2 font-medium bg-gradient-to-r from-purple-950 to-red-000 text-white w-fit transition-all shadow-[1px_1px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-md max-w-[200px]"
-          >
-            Skills
-          </Link>
-          <Link
-            href="/my-projects"
-            className="px-6 py-2 font-medium bg-gradient-to-r from-purple-950 to-red-000 text-white w-fit transition-all shadow-[1px_1px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-md max-w-[200px]"
-          >
-            Projects
-          </Link>
-          <Link
-            href="/contact-me"
-            className="px-6 py-2 font-medium bg-gradient-to-r from-purple-950 to-red-000 text-white w-fit transition-all shadow-[1px_1px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-md max-w-[200px]"
-          >
-            Contact
-          </Link>
-        </div>
       </div>
-      
-    </div>
-          {/* BOTOES PARA CELULARES E TABLETS*/}
-    <div className="absolute pb-6 pr-1 flex bottom-20 z-[60] right-5 flex-col md:hidden gap-5">
-          <Link
-            href="/about-me"
-            className="px-6 py-2 font-medium bg-gradient-to-r from-purple-950 to-red-000 text-white w-fit transition-all shadow-[1px_1px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-md max-w-[200px]"
-          >
-            About-me
-          </Link>
-      <Link href="/my-skills" className="px-6 py-2  font-medium bg-gradient-to-r from-purple-950 to-red-000 text-white  transition-all shadow-[2px_2px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-md max-w-[150px] block text-center">
-        Skills
-      </Link>
-      <Link href="/my-projects" className="block px-6  py-2 font-medium bg-gradient-to-r from-purple-950 to-red-000 text-white transition-all shadow-[2px_2px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-md max-w-[150px] text-center">
-      Projects
-      </Link>
-
-      <Link href="/contact-me" className="px-6 py-2  font-medium bg-gradient-to-r from-purple-950 to-red-000 text-white  transition-all shadow-[2px_2px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-md max-w-[150px] block text-center">
-        Contact
-      </Link>
     </div>
 
     <div className="absolute bottom-0 right-0 z-[10]">

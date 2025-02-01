@@ -41,10 +41,6 @@ const Navigation = () => {
                 path === nav.name ? "text-purple-700" : "text-white"
               }`}
             />
-            {/* Label para desktop */}
-            <span className="hidden md:block absolute right-full top-1/2 -translate-y-1/2 mr-2 bg-black/80 text-white text-xs px-2 py-1 rounded-md opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
-              {nav.name}
-            </span>
           </Link>
         ))}
       </div>
