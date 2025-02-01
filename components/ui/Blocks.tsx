@@ -1,4 +1,3 @@
-'use client';
 import { motion } from 'framer-motion';
 
 // Definição do objeto de animação para o efeito de "escada" nos blocos

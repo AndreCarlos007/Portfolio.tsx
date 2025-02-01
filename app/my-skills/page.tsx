@@ -1,4 +1,3 @@
-"use client";
 import React from 'react'
 import { IconCloudDemo } from '@/components/ui/IconCloudDemo'
 import SkillsSlider from '@/components/SkillsSlider'

@@ -1,4 +1,3 @@
-"use client";
 import WorkSlider from '../../components/WorkSlider';
 import Link from 'next/link';
 

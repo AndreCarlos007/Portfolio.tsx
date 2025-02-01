@@ -1,5 +1,3 @@
-'use client';
-
 // Importações necessárias do React e bibliotecas auxiliares
 import { AnimatePresence, motion } from 'framer-motion'; // Framer Motion para animações de elementos
 import { usePathname } from 'next/navigation'; // Hook para acessar o caminho atual da URL no Next.js
