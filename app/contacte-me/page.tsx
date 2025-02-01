@@ -3,8 +3,8 @@ import {BsArrowRight} from 'react-icons/bs'
 const page = () => {
   return (
     <div style={{backgroundImage: "url(/bg-2.jpg)" }}
-    className='h-screen w-screen items-center justify-center flex bg-cover bg-center '>
-        <div className='flex flex-col w-full max-w-[600px] '>
+    className='h-screen w-screen items-center justify-center flex bg-cover bg-center overflow-scroll md:overflow-hidden '>
+        <div className='flex flex-col w-full max-w-[300px] sm:max-w-[340px] md:max-w-[600px] mt-72 mb-36 sm:mt-36 md:mt-0 md:mb-0'>
             <h2 className='text-white text-[2rem] font-bold mb-3 text-center'>
               Let&apos;s <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500'>connect.</span>
             </h2>
@@ -24,6 +24,7 @@ const page = () => {
                 <BsArrowRight className='-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 
                 transition-all duration-300 absolute text-[22px]'/>
                 </button>
+                
             </form>
         </div>
       </div>
