@@ -48,6 +48,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
+      
     </div>
           {/* BOTOES PARA CELULARES E TABLETS*/}
     <div className="absolute pb-6 pr-1 flex bottom-20 z-[60] right-5 flex-col md:hidden gap-5">
