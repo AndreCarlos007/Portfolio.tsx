@@ -29,7 +29,7 @@ const Navigation = () => {
     <div className="relative h-full">
     <div
       style={{ left: "20%" }}
-      className="fixed z-[50] -bottom-20 w-[60%] md:w-[23%] max-h-[150px] rounded-full flex justify-between items-center border bg-black border-[#ffffff14] px-7 py-7 overflow-hidden"
+      className="fixed z-[50] -bottom-20 w-[60%] md:w-[60%] lg:w-[32%] max-h-[150px] rounded-full flex justify-between items-center border bg-black border-[#ffffff14] md:pl-16 px-7 py-7 overflow-hidden"
     >
 
       {isRouting }
