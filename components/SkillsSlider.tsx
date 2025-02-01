@@ -124,6 +124,8 @@ const TechnologySlider: FC = () => {
         disableOnInteraction: false, // Permite o autoplay continuar após interação do usuário
       }}
       loop={true}
+      touchStartPreventDefault={false} // Permite que eventos de toque passem pela página
+      touchMoveStopPropagation={false} // Permite que a rolagem passe pelo slider
     >
       {technologyData.map((tech, index) => (
         <SwiperSlide key={index}>
