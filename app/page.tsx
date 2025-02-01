@@ -1,26 +1,27 @@
 "use client"
-
+import "./globals.css";
 import Image from "next/image"
 import Link from 'next/link'
 
 export default function Home() {
   return (
-    <main className="w-screen h-screen " >
+    <main className="w-screen h-screen text-justify" >
     <div
       className="flex  w-screen  h-screen  bg-cover bg-center"
       style={{ backgroundImage: "url(/main-bg.webp)" }}
     >
-      <div className=" md:pl-40  md:pt-36 flex flex-col gap-5 z-[10] max-w-[750px] ">
-        <h1 className="text-[50px] text-white font-semibold hidden md:block">
+      <div className="sm:pl-10 sm:pt-32 sm:max-w-[300px] 2sm:max-w-[350px] md:pl-40 md:pt-36 flex flex-col gap-5 z-[10] max-w-[800px] ">
+        <h1 className="text-[50px] text-white hidden sm:block sm:text-[1.4rem] sm:font-semibold 2sm:font-semibold ">
           Make anything possible with
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
             {" "}
             Web Development
           </span>
         </h1>
-        <p className="text-gray-200 hidden md:block">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <p className="text-gray-200 hidden 2sm:block md:block">
+        I create digital solutions that prioritize both aesthetics and usability. 
+          My portfolio showcases a variety of projects that demonstrate my expertise
+          in diverse technologies and innovative design approaches.
         </p>
         <div className="flex-col md:flex-row hidden md:flex gap-5">
           <Link
@@ -41,7 +42,7 @@ export default function Home() {
             className="rounded-[20px] group relative bg-trasparent border border-white px-5 py-3 text-lg text-white max-w-[200px]"
           >
             <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hover:opacity-20" />
-            Contact me
+            Contact
           </Link>
         </div>
       </div>
@@ -55,7 +56,7 @@ export default function Home() {
         My projects
       </Link>
       <Link href="/contacte-me" className="rounded-[20px] group bg-trasparent border border-white px-5 py-3 text-xm text-white max-w-[200px]">
-        Contact me
+        Contact
       </Link>
 
     </div>
