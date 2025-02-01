@@ -12,6 +12,7 @@ const Page: React.FC = () => {
   });
 
   const [statusMessage, setStatusMessage] = useState<string>("");
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false); // Estado para controlar se o envio está em andamento
 
   // Função para lidar com mudanças nos inputs
   const handleInputChange = (
@@ -32,6 +33,10 @@ const Page: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
+    if (isSubmitting) return; // Impede o envio múltiplo
+
+    setIsSubmitting(true); // Marca o início do envio
+
     const serviceId = "service_oi4yvzs";
     const templateId = "template_il7i00m";
     const userId = "1JfgqlqaOWmql2M2_";
@@ -45,6 +50,9 @@ const Page: React.FC = () => {
       .catch((error) => {
         setStatusMessage("Error sending message. Please try again.");
         console.error("EmailJS error:", error);
+      })
+      .finally(() => {
+        setIsSubmitting(false); // Marca o fim do envio
       });
   };
 
@@ -98,13 +106,15 @@ const Page: React.FC = () => {
             className="w-full h-[120px] p-6 rounded-lg resize-none bg-transparent outline-none focus:ring-1 focus:ring-purple-800 border border-white/10 placeholder:text-white/30 placeholder:font-light"
           ></textarea>
 
-          {/* Botão de envio desabilitado se o formulário for inválido */}
+          {/* Botão de envio desabilitado se o formulário for inválido ou se o envio já estiver em andamento */}
           <button
             type="submit"
             className={`text-white h-[52px] rounded-full border border-white/30 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-purple-800 group ${
-              isFormValid() ? "" : "opacity-10 cursor-not-allowed text-opacity-0"
+              isFormValid() && !isSubmitting
+                ? ""
+                : "opacity-10 cursor-not-allowed text-opacity-0"
             }`}
-            disabled={!isFormValid()}
+            disabled={!isFormValid() || isSubmitting} // Desabilita o botão se o formulário for inválido ou se já estiver enviando
           >
             <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
               Let&apos;s talk
