@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="w-screen h-screen " >
     <div
-      className="flex  w-screen  h-screen  bg-cover bg-center"
+      className="flex w-screen  h-screen  bg-cover bg-center"
       style={{ backgroundImage: "url(/main-bg.webp)" }}
     >
       <div className="sm:pl-10 sm:pt-28 sm:max-w-[320px] md:max-w-[600px] lg:max-w-[700px] md:pl-[5.3rem] md:pt-36  flex flex-col gap-5 z-[50] ">
