@@ -1,6 +1,5 @@
 import "./globals.css";
 import Image from "next/image"
-import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -57,17 +56,6 @@ export default function Home() {
       priority
       />
     </div>
-
-      
-     {/* <div className="absolute bottom-0 z-[5] w-full h-auto">
-      <Image
-        src="/trees.webp"
-        alt="trees"
-        width={2000}
-        height={2000}
-        className="w-full h-full pointer-events-none"
-      />
-    </div> */}
 
     <Image
       src="/stars.AVIF"

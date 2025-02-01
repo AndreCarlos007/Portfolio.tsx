@@ -37,7 +37,7 @@ const Navigation = () => {
             className="group relative transition-all"
           >
             <nav.icon
-              className={`w-[22px] hover:h-[30px] hover:text-purple-900 transition-all duration-300 ${
+              className={`w-[22px] hover:h-[30px] hover:text-purple-700 transition-all duration-300 ${
                 path === nav.name ? "text-purple-700" : "text-white"
               }`}
             />
