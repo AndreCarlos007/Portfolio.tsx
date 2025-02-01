@@ -11,9 +11,9 @@ const Navbar = () => {
         </div>
 
         <div className='flex flex-row gap-3 mb-2'>
-            <Link href="https://www.linkedin.com/in/andr%C3%A9-carloscx" rel="noopener noreferrer" target='_blank'><Image src="/linkedin.svg" alt="Linkedin" /></Link>
-            <Link href="https://github.com/AndreCarlos007" rel="noopener noreferrer" target='_blank'><Image src="/github.svg" alt="Github" /></Link>
-            <Link href="/curriculoAndre.pdf" rel="noopener noreferrer" target='_blank' ><Image  src="/curriculum.png" alt="Discord" width={40} /></Link>
+            <Link href="https://www.linkedin.com/in/andr%C3%A9-carloscx" rel="noopener noreferrer" target='_blank'><Image width={40} height={40} loading='lazy' src="/linkedin.svg" alt="Linkedin" /></Link>
+            <Link href="https://github.com/AndreCarlos007" rel="noopener noreferrer" target='_blank'><Image width={40} height={40} loading='lazy'  src="/github.svg" alt="Github" /></Link>
+            <Link href="/curriculoAndre.pdf" rel="noopener noreferrer" target='_blank' ><Image width={40} height={40} loading='lazy'   src="/curriculum.AVIF" alt="Discord" /></Link>
           
         </div>
     </div>

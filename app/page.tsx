@@ -72,11 +72,12 @@ export default function Home() {
 
     <div className="absolute bottom-0 right-0 z-[10]">
       <Image
-        src="/horse.png"
+        src="/horse.AVIF"
         alt="horse"
         height={200}
         width={115}
         className="absolute right-48 top-40 md:w-[350px] md:top-32 md:right-44 lg:top-4 lg:right-72 pointer-events-none"
+        priority
       />
 
       <Image 
@@ -85,6 +86,7 @@ export default function Home() {
       width={310} 
       height={400}
       className="md:w-[500px] lg:w-[600px] lg:h-[600px] pointer-events-none"
+      priority
       />
     </div>
 
@@ -100,11 +102,12 @@ export default function Home() {
     </div> */}
 
     <Image
-      src="/stars.png"
+      src="/stars.AVIF"
       alt="stars"
       height={300}
       width={300}
       className="absolute top-0 left-0 z-[10] pointer-events-none"
+      loading="lazy"
     />
   </main>
   );
