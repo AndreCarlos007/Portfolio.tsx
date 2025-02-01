@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className='flex flex-row gap-3 mb-2'>
             <Link href="https://www.linkedin.com/in/andr%C3%A9-carloscx" target='_blank'><img src="/linkedin.svg" alt="Linkedin" /></Link>
             <Link href="https://github.com/AndreCarlos007" target='_blank'><img src="/github.svg" alt="Github" /></Link>
-            <Link href="/"><img src="/discordnew.svg" alt="Discord" /></Link>
+            <Link href="/curriculoAndre.pdf" target='_blank' ><img  src="/curriculum.png" alt="Discord" width={40} /></Link>
           
         </div>
     </div>

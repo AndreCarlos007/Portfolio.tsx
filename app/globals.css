@@ -11,7 +11,28 @@ body {
     -ms-user-select: none; 
     user-select: none;
 }
-::-webkit-scrollbar-thumb {
-    background-color: #A55EFF;
+/* Estiliza toda a barra de rolagem */
+::-webkit-scrollbar {
+    width: 12px; /* Largura da barra */
+    height: 12px; /* Altura da barra horizontal */
+  }
+  
+  /* Estiliza a "thumb" (parte que desliza) */
+  ::-webkit-scrollbar-thumb {
+    background-color: #A55EFF; /* Cor da thumb */
+    border-radius: 10px; /* Arredondamento */
+    border: 3px solid transparent; /* Espaço entre a thumb e o track */
+    background-clip: padding-box; /* Faz o fundo respeitar o border */
+  }
+  
+  /* Estiliza o track (trilho da barra de rolagem) */
+  ::-webkit-scrollbar-track {
+    background-color: #1A1A1A; /* Cor do fundo do trilho */
     border-radius: 10px;
-}
+  }
+  
+  /* Estiliza o canto quando a barra é dupla (horizontal e vertical) */
+  ::-webkit-scrollbar-corner {
+    background-color: #333;
+  }
+  
