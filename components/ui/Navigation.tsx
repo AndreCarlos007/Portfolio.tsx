@@ -29,14 +29,14 @@ const Navigation = () => {
     <div className="relative h-full">
     <div
       style={{ left: "20%" }}
-      className="fixed z-[50] -bottom-20 w-[60%] md:w-[60%] lg:w-[32%] max-h-[150px] rounded-full flex justify-between items-center border bg-black border-[#ffffff14] md:pl-16 px-7 py-7 overflow-hidden"
+      className="fixed gap-1 z-[50] -bottom-20 w-[60%] md:w-[60%] lg:w-[32%] max-h-[150px] rounded-full flex justify-between items-center border bg-black border-[#ffffff14] md:pl-16 px-7 py-7 overflow-hidden"
     >
 
       {isRouting }
       {NavLinks.map((nav) => (
-        <Link key={nav.name} href={nav.link} className="mb-16 pl- min-w-[20%]">
+        <Link key={nav.name} href={nav.link} className="mb-16 pl- min-w-[15%]">
           <nav.icon
-            className={`w-[24px] h-[24px] ${
+            className={`w-[22px] h-[24px] ${
               path === nav.name ? "text-purple-700" : "text-white"
             }`}
           />

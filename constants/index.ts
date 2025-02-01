@@ -8,6 +8,11 @@ export const NavLinks = [
     link: "/",
   },
   {
+    name: "/about-me",
+    icon: RxPerson,
+    link: "/about-me"
+  },
+  {
     name: "/my-skills",
     icon: SiDatabricks,
     link: "/my-skills",
