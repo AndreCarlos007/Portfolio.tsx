@@ -38,7 +38,7 @@ const Navigation = () => {
     md:w-16 md:max-w-md md:h-screen ">
       <div
         // Posiciona o menu na horizontal com margem à esquerda de 20%
-        className="flex w-full md:flex-col items-center justify-between md:justify-center gap-y-10 px-4 sm:px-6 md:px-0 h-[80px] 
+        className="flex w-full md:flex-col items-center justify-between md:justify-center gap-y-10 px-4 sm:px-6 md:px-0 h-[1px] 
         md:h-max py-8 bg-[#0000008a] backdrop-blur-sm text-3xl md:text-xl rounded-t-[3rem] md:rounded-full"
       >
         {/* Estado de transição */}
@@ -48,7 +48,7 @@ const Navigation = () => {
           <Link key={nav.name} href={nav.link} className="">
             {/* Ícone correspondente ao link */}
             <nav.icon
-              className={`w-[40px] hover:h-[42px] transition-all duration-300 ${
+              className={`w-[22px] hover:h-[32px] transition-all duration-300 ${
                 path === nav.name ? "text-purple-700" : "text-white"
               }`} // Aplica a cor ao ícone dependendo se é a rota ativa ou não
             />
