@@ -7,7 +7,7 @@ import { useInView } from "react-intersection-observer";
 const AboutSlider = dynamic(() => import("@/components/AboutSlider").then(mod => mod.default), { ssr: false });
 
 // Função principal que representa a página
-const page: React.FC = () => {
+const Page: React.FC = () => {
   const { ref, inView } = useInView({ triggerOnce: true });
   return (
     // Contêiner principal da página com fundo personalizado e layout responsivo
@@ -59,4 +59,4 @@ const page: React.FC = () => {
   )
 }
 
-export default page; // Exporta o componente para ser usado como uma página no Next.js
+export default Page; // Exporta o componente para ser usado como uma página no Next.js
