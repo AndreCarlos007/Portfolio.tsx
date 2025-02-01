@@ -48,13 +48,13 @@ export default function Home() {
     </div>
 
     <div className="absolute flex bottom-20 z-[20] right-5 flex-col md:hidden gap-5">
-      <Link href="/my-skills" className="rounded-[20px] group bg-blue-500 px-5 py-3 text-xm text-white max-w-[125px]">
+      <Link href="/my-skills" className="rounded-[20px] group bg-blue-500 px-5 py-3 text-xm text-white max-w-[200px]">
         Learn more
       </Link>
-      <Link href="/my-projects" className="rounded-[20px] group bg-trasparent border border-white px-5 py-3 text-xm text-white max-w-[125px]">
+      <Link href="/my-projects" className="rounded-[20px] group bg-trasparent border border-white px-5 py-3 text-xm text-white max-w-[200px]">
         My projects
       </Link>
-      <Link href="/contacte-me" className="rounded-[20px] group bg-trasparent border border-white px-5 py-3 text-xm text-white max-w-[125px]">
+      <Link href="/contacte-me" className="rounded-[20px] group bg-trasparent border border-white px-5 py-3 text-xm text-white max-w-[200px]">
         Contact me
       </Link>
 
