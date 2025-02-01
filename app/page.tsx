@@ -10,7 +10,7 @@ export default function Home() {
       style={{ backgroundImage: "url(/main-bg.webp)" }}
     >
       <div className="sm:pl-10 sm:pt-28 sm:max-w-[320px] md:max-w-[600px] lg:max-w-[700px] md:pl-[5.3rem] md:pt-36  flex flex-col gap-5 z-[50] ">
-        <h1 className="text-[50px] text-white hidden sm:block sm:text-[1.4rem] sm:font-semibold md:text-[2rem] lg:text-[2.5rem] ">
+        <h1 className="text-[50px] text-white hidden sm:block sm:text-[1.2rem] sm:font-semibold md:text-[2rem] lg:text-[2.5rem] ">
           Make anything possible with
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
             {" "}
