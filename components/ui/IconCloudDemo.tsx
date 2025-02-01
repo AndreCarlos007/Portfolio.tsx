@@ -46,3 +46,5 @@ export function IconCloudDemo() {
     </div>
   );
 }
+
+export default IconCloudDemo
