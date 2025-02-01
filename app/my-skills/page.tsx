@@ -31,7 +31,7 @@ const Page: React.FC = () => {
             <SkillsSlider />
           </div>
         </div>
-        <div className="order-1 lg:order-2 pt-36 md:pt-0 max-w-[400px]" ref={ref}>
+        <div className="order-1 lg:order-2 pt-36 md:pt-0 max-w-[320px] md:max-w-[400px]" ref={ref}>
           {inView && <IconCloudDemo />}
         </div>
       </div>
