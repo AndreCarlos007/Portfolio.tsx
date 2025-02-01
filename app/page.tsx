@@ -33,14 +33,14 @@ export default function Home() {
             href="/my-projects"
             className="rounded-[20px] group relative bg-trasparent px-5 border border-white py-3 text-lg text-white max-w-[200px]"
           >
-            <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hver:opacity-20" />
+            <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hover:opacity-20" />
             My projects
           </Link>
           <Link
             href="/contact-me"
             className="rounded-[20px] group relative bg-trasparent border border-white px-5 py-3 text-lg text-white max-w-[200px]"
           >
-            <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hver:opacity-20" />
+            <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hover:opacity-20" />
             Contact me
           </Link>
         </div>
@@ -73,8 +73,9 @@ export default function Home() {
       src="/cliff.webp" 
       alt="cliff" 
       width={500} 
-      height={500} />
-      
+      height={500} 
+      className="w-screen h-screen"
+      />
     </div>
 
     <div className="absolute bottom-0 z-[5] w-full h-auto">
