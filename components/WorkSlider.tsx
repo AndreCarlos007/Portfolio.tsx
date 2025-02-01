@@ -73,11 +73,11 @@ const WorkSlider: FC = () => {
                     group-hover:opacity-80 transition-all duration-700">
                     </div>
 
-                    <div className='absolute bottom-0 translate-y-full group-hover:-translate-y-14 transition-all duration-300 text-white '>
-                        <div className='flex text-[16px] font-bold gap-x-2 tracking-[0.2rem]'>
+                    <div className='absolute bottom-0 translate-y-full group-hover:-translate-y-8 md:group-hover:-translate-y-14 transition-all duration-300 text-white '>
+                        <div className='flex text-[8px] md:text-[16px] font-bold gap-x-2 tracking-[0.2rem]'>
                             <div className='delay-100'>LIVE </div>
                             <div className='translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150'>PROJECT</div>
-                            <div className=' text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200'><BsArrowRight /> </div>
+                            <div className='text-[12px] md:text-[25px] translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200'><BsArrowRight /> </div>
                         </div>
                     </div>
                 </div>

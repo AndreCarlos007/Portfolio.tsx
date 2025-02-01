@@ -15,10 +15,6 @@ export default {
       '2xl': '1536px',
     },
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
     },
   },
   plugins: [],
