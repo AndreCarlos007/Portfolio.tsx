@@ -37,7 +37,7 @@ export default function Home() {
             My projects
           </Link>
           <Link
-            href="/contact-me"
+            href="/contacte-me"
             className="rounded-[20px] group relative bg-trasparent border border-white px-5 py-3 text-lg text-white max-w-[200px]"
           >
             <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hover:opacity-20" />
@@ -54,7 +54,7 @@ export default function Home() {
       <Link href="/my-projects" className="rounded-[20px] group bg-trasparent border border-white px-5 py-3 text-lg text-white max-w-[200px]">
         My projects
       </Link>
-      <Link href="/contact-me" className="rounded-[20px] group bg-trasparent border border-white px-5 py-3 text-lg text-white max-w-[200px]">
+      <Link href="/contacte-me" className="rounded-[20px] group bg-trasparent border border-white px-5 py-3 text-lg text-white max-w-[200px]">
         Contact me
       </Link>
 
