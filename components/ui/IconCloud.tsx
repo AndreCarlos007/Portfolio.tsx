@@ -20,7 +20,7 @@ export const cloudProps = {
     wheelZoom: false,
     imageScale: 2,
     activeCursor: 'default',
-    tooltip: 'native' as 'native', // Assertão de tipo para 'native'
+    tooltip: 'native' as const, // Assertão de tipo para 'native'
     initial: [0.1, -0.1],
     clickToFront: 500,
     tooltipDelay: 0,
