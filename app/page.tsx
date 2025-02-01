@@ -5,13 +5,13 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <main className="w-screen h-screen relative">
+    <main className="w-screen h-screen" >
     <div
-      className="flex items-center w-full h-full bg-cover bg-center"
+      className="flex  w-full h-full  bg-cover bg-center"
       style={{ backgroundImage: "url(/main-bg.webp)" }}
     >
-      <div className="pl-20 md:pl-40 pb-56 md:pb-20 flex flex-col gap-5 z-[10] max-w-[750px]">
-        <h1 className="text-[50px] text-white font-semibold">
+      <div className=" md:pl-40  md:pt-36 flex flex-col gap-5 z-[10] max-w-[750px] ">
+        <h1 className="text-[50px] text-white font-semibold hidden md:block">
           Make anything possible with
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
             {" "}
