@@ -65,7 +65,7 @@ const Page: React.FC = () => {
           <div className=''>
             <div className='flex gap-6'>
             <h1 className='text-[1.5rem] font-bold text-purple-500 '>Systems Analysis and Development</h1>
-            <Image className='' src="/certificado.AVIF" alt='certificado' width={80} height={10} />
+            <Image className=' ' src="/certificado.AVIF" alt='certificado' width={120} height={20} />
             </div>
             <div className='pt-1'>
             <h3 className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500 font-extrabold'>UniFacema - Maranhão</h3>
