@@ -2,8 +2,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/ui/Navbar";
 import Navigation from "@/components/ui/Navigation";
-// import TransitionPage from "@/components/ui/TransitionPage";
-// import TransitionBlocks from "@/components/ui/TransitionBlocks";
+import TransitionPage from "@/components/ui/TransitionPage";
+import TransitionBlocks from "@/components/ui/TransitionBlocks";
 import type { Metadata } from "next";
 
 const geistSans = Geist({
@@ -27,15 +27,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" translate="yes">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
-        {/* <TransitionBlocks />
-        <TransitionPage >   */}
+         <TransitionBlocks />
+        <TransitionPage >
         {children}
-        {/* </TransitionPage> */}
+        </TransitionPage>
         <Navigation />
         
       </body>

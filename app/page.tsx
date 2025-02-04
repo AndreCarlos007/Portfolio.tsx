@@ -30,7 +30,7 @@ export default function Home() {
             Software Development.
           </span>
         </h1>
-        <p className="text-gray-200 hidden sm:block md:block md:text-[1rem] text-justify">
+        <p className="text-white/80 hidden sm:block md:block md:text-[1rem] text-justify">
         I create digital solutions that prioritize both aesthetics and usability. <span className="hidden lg:block">My name is <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500 font-bold">André Carlos.</span> This portfolio showcases a variety of projects that demonstrate my expertise
         in diverse technologies and innovative design approaches.</span>
         </p>

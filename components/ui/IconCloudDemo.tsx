@@ -28,11 +28,10 @@ const slugs = [
   'laragon',
   'prisma',
   'adonisjs',
-  'amazonwebservices',
-  'terraform',
-  '	claude',
+  'claude',
   'openai',
-  'kubernetes',
+  'supabase',
+  'firebase'
   
 ];
 

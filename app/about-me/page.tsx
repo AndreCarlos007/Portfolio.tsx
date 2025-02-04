@@ -3,6 +3,7 @@ import React from 'react'; // Importa React para criar o componente funcional
 import Image from 'next/image';
 
 
+
 // Função principal que representa a página
 const Page: React.FC = () => {
   
@@ -28,12 +29,12 @@ const Page: React.FC = () => {
       {/* Seção da biografia */}
       <div className="max-w-[270px] pt-[47rem] sm:max-w-[320px] md:max-w-[400px] sm:pt-[35rem] md:pt-0 lg:max-w-[400px]">
         {/* Título da seção de biografia */}
-        <h1 className='text-[1.5rem] font-bold text-purple-500'>Biography</h1>
+        <h1 className='text-[1.5rem] pb-3 font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500'>Biography</h1>
         
         {/* Texto da biografia */}
         <div className='text-justify md:text-[0.9rem]'>
           {/* Parágrafo 1: Introdução e paixão por programação */}
-          <p>
+          <p className='text-white/80'>
             Hello, I&apos;m 
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500'> André Carlos</span>, 
             a 20-year-old Systems Analysis and Development student, and I am passionate about programming.
@@ -43,7 +44,7 @@ const Page: React.FC = () => {
           </p>
           
           {/* Parágrafo 2: Conhecimento em tecnologias e busca por estágio */}
-          <p className='pt-3'>
+          <p className='pt-3 text-white/80'>
             I have come to know various technologies, frameworks, databases, and tools, constantly improving 
             <Link href='/my-skills' className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500'> my skill</Link> set. 
             I am a focused, detail-oriented, and dedicated individual, currently seeking an internship to gain practical experience 
@@ -52,7 +53,10 @@ const Page: React.FC = () => {
         </div>
       </div>
 
-      <div className='border-b-4 border-[#ffffff36] pl-72 sm:pl-80 lg:pl-0 lg:border-l-4 lg:border-[#ffffff36] rounded-3xl lg:pt-96'></div>
+      <div className="border border-transparent rounded-3xl bg-gradient-to-r from-purple-700 to-red-500/20 p-1">
+    <div className="bg-white h-full w-full rounded-2xl pl-72 sm:pl-80 lg:pl-0 lg:pt-96">
+    </div>
+  </div>
       {/* Seção da educação */}
       <div className='w-full pb-24 sm:pt-0 sm:pb-44 md:pb-28 max-w-[290px] sm:max-w-[320px] md:pt-0 md:max-w-[400px] lg:max-w-[350px] lg:pt-16 lg:pb-20'>
         {/* Título da seção de educação */}
@@ -64,18 +68,18 @@ const Page: React.FC = () => {
         <div className='max-w-[400px]'>
           <div className=''>
             <div className='flex gap-6'>
-            <h1 className='text-[1.5rem] font-bold text-purple-500 '>Systems Analysis and Development</h1>
+            <h1 className='text-[1.5rem] font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500 '>Systems Analysis and Development</h1>
             <Image className=' ' src="/certificado.AVIF" alt='certificado' width={120} height={20} />
             </div>
-            <div className='pt-1'>
-            <h3 className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500 font-extrabold'>UniFacema - Maranhão</h3>
-            <span className='text-[1rem] text-[#FFFFFF99] font-extralight'> February 2024 - August 2026</span>
+            <div className=''>
+            <h3 className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500 font-extrabold text-[1.3rem]'>UniFacema - Maranhão</h3>
+            <span className='text-[0.9rem] text-white/60 font-extralight '> February 2024 - August 2026</span>
             </div>
             
           </div>
 
-          <div className='pt-1'>
-            <p className='md:text-[0.9rem] text-justify'>Training in development, management, and system implementation, 
+          <div className='pt-2'>
+            <p className='md:text-[0.9rem] text-justify text-white/80'>Training in development, management, and system implementation, 
               covering programming (PHP, JS, C#), databases (SQL/NoSQL), requirements analysis, agile methodologies (Scrum), 
               responsive web/mobile development, and cloud computing. Focus on efficient technological solutions for the market.</p>
           </div>

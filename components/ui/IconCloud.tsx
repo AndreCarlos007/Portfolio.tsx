@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from 'react';
 import { Cloud, fetchSimpleIcons, renderSimpleIcon, SimpleIcon } from 'react-icon-cloud';
+import { motion } from 'framer-motion';
 
 export const cloudProps = {
   containerProps: {
@@ -19,8 +20,8 @@ export const cloudProps = {
     depth: 1,
     wheelZoom: false,
     imageScale: 2,
-    activeCursor: 'default',
-    tooltip: 'native' as const, // Assertão de tipo para 'native'
+    activeCursor: 'default' as const,
+    tooltip: 'native' as const,
     initial: [0.1, -0.1],
     clickToFront: 500,
     tooltipDelay: 0,
@@ -31,7 +32,6 @@ export const cloudProps = {
   },
 };
 
-// O restante do código permanece inalterado
 export const renderCustomIcon = (icon: SimpleIcon) => {
   return renderSimpleIcon({
     icon,
@@ -61,15 +61,10 @@ export default function IconCloud({ iconSlugs }: IconCloudProps) {
 
   const renderedIcons = useMemo(() => {
     if (!data) return null;
-
-    return Object.values(data.simpleIcons).map((icon: SimpleIcon) =>
-      renderCustomIcon(icon)
-    );
+    return Object.values(data.simpleIcons).map((icon: SimpleIcon) => renderCustomIcon(icon));
   }, [data]);
 
   return (
-    <Cloud {...cloudProps}>
-      {renderedIcons}
-    </Cloud>
+      <Cloud {...cloudProps}>{renderedIcons}</Cloud>
   );
 }
