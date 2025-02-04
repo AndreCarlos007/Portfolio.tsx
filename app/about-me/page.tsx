@@ -1,19 +1,16 @@
-"use client"; // Indica que o componente deve ser renderizado no cliente
 import Link from 'next/link'; // Importa o componente Link do Next.js para navegação interna
 import React from 'react'; // Importa React para criar o componente funcional
-import dynamic from "next/dynamic";
-import { useInView } from "react-intersection-observer";
+import Image from 'next/image';
 
-const AboutSlider = dynamic(() => import("@/components/AboutSlider").then(mod => mod.default), { ssr: false });
 
 // Função principal que representa a página
 const Page: React.FC = () => {
-  const { ref, inView } = useInView({ triggerOnce: true, delay: 100 });
+  
   return (
     // Contêiner principal da página com fundo personalizado e layout responsivo
     <div 
       style={{backgroundImage: "url(/bg-2.AVIF)" }} // Adiciona a imagem de fundo
-      className='flex flex-col md:flex-row overflow-scroll md:overflow-hidden items-center justify-center w-screen h-screen bg-cover bg-center text-white gap-10 sm:gap-10 md:gap-8 lg:gap-32'>
+      className='flex flex-col lg:flex-row overflow-scroll lg:overflow-hidden items-center justify-center w-screen h-screen bg-cover bg-center text-white gap-10 sm:gap-10 md:gap-8 lg:gap-32 pt-96 pb-20 sm:pt-64 sm:pb-0 lg:pb-0 lg:pt-0 '>
         <link
             rel="preload"
             href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
@@ -29,9 +26,9 @@ const Page: React.FC = () => {
             sizes="100vw"
           />
       {/* Seção da biografia */}
-      <div className="max-w-[270px] pt-[47rem] sm:max-w-[320px] sm:pt-[35rem] md:pt-0 lg:max-w-[600px]">
+      <div className="max-w-[270px] pt-[47rem] sm:max-w-[320px] md:max-w-[400px] sm:pt-[35rem] md:pt-0 lg:max-w-[400px]">
         {/* Título da seção de biografia */}
-        <h1 className='text-[1.5rem] font-bold text-[#FFFFFF99]'>BIOGRAPHY</h1>
+        <h1 className='text-[1.5rem] font-bold text-purple-500'>Biography</h1>
         
         {/* Texto da biografia */}
         <div className='text-justify md:text-[0.9rem]'>
@@ -55,16 +52,33 @@ const Page: React.FC = () => {
         </div>
       </div>
 
+      <div className='border-b-4 border-[#ffffff36] pl-72 sm:pl-80 lg:pl-0 lg:border-l-4 lg:border-[#ffffff36] rounded-3xl lg:pt-96'></div>
       {/* Seção da educação */}
-      <div className='w-full pb-24 sm:pt-0 sm:pb-44 md:pb-28 max-w-[290px] sm:max-w-[320px] md:pt-0 md:max-w-[350px] lg:pt-16 lg:pb-20'>
+      <div className='w-full pb-24 sm:pt-0 sm:pb-44 md:pb-28 max-w-[290px] sm:max-w-[320px] md:pt-0 md:max-w-[400px] lg:max-w-[350px] lg:pt-16 lg:pb-20'>
         {/* Título da seção de educação */}
-        <h1 className='font-bold pb-3 text-[2rem] '>
+        {/* <h1 className='font-bold pb-3 text-[2rem] '>
           My <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500'>Education.</span>
-        </h1>
+        </h1> */}
         
-        {/* Componente slider para exibir informações educacionais */}
-        <div className='select-none' ref={ref}>
-        {inView && <AboutSlider />}
+        {/* Componente formação academica */}
+        <div className='max-w-[400px]'>
+          <div className=''>
+            <div className='flex gap-6'>
+            <h1 className='text-[1.5rem] font-bold text-purple-500 '>Systems Analysis and Development</h1>
+            <Image className='' src="/certificado.AVIF" alt='certificado' width={80} height={10} />
+            </div>
+            <div className='pt-1'>
+            <h3 className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500 font-extrabold'>UniFacema - Maranhão</h3>
+            <span className='text-[1rem] text-[#FFFFFF99] font-extralight'> February 2024 - August 2026</span>
+            </div>
+            
+          </div>
+
+          <div className='pt-1'>
+            <p className='md:text-[0.9rem] text-justify'>Training in development, management, and system implementation, 
+              covering programming (PHP, JS, C#), databases (SQL/NoSQL), requirements analysis, agile methodologies (Scrum), 
+              responsive web/mobile development, and cloud computing. Focus on efficient technological solutions for the market.</p>
+          </div>
         </div>
         
       </div>

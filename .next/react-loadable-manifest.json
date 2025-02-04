@@ -1,18 +1,4 @@
 {
-  "app\\about-me\\page.tsx -> @/components/AboutSlider": {
-    "id": "app\\about-me\\page.tsx -> @/components/AboutSlider",
-    "files": [
-      "static/css/_app-pages-browser_components_AboutSlider_tsx.css",
-      "static/chunks/_app-pages-browser_components_AboutSlider_tsx.js"
-    ]
-  },
-  "app\\my-projects\\page.tsx -> @/components/WorkSlider": {
-    "id": "app\\my-projects\\page.tsx -> @/components/WorkSlider",
-    "files": [
-      "static/css/_app-pages-browser_components_WorkSlider_tsx.css",
-      "static/chunks/_app-pages-browser_components_WorkSlider_tsx.js"
-    ]
-  },
   "app\\my-skills\\page.tsx -> @/components/SkillsSlider": {
     "id": "app\\my-skills\\page.tsx -> @/components/SkillsSlider",
     "files": [
