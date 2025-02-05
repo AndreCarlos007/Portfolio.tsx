@@ -122,7 +122,6 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 - Uso de **next/image** para carregamento otimizado de imagens.
 - Implementação de **Lazy Loading** para componentes pesados.
 - Utilização de **SSG e SSR** para melhor performance.
-- CSS otimizado evitando classes desnecessárias.
 
 ## 🚀 Deploy na Vercel.
 O site está hospedado na Vercel. Para fazer deploy manualmente:
