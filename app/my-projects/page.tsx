@@ -58,6 +58,7 @@ const projects: Project[] = [
       { icon: <DiGit size={60} />, name: 'git' },
     ],
   },
+ // tou precisando de mais projetos
 ];
 
 const Work: React.FC = () => {
@@ -87,14 +88,15 @@ const Work: React.FC = () => {
   return (
     <main 
       style={{ backgroundImage: "url(/bg-2.AVIF)" }} // Define a imagem de fundo da seção
-      className="flex items-center justify-center min-h-screen w-full bg-cover bg-center p-4 overflow-scroll md:overflow-hidden"
+      className="flex items-center justify-center h-screen w-screen bg-cover bg-center p-4 overflow-scroll md:overflow-hidden "
     >
-      <div className=" lg:max-w-7xl flex items-center justify-center overflow-scroll md:overflow-hidden">
-        <div className="flex flex-col lg:flex lg:flex-row w-full items-center justify-around mt-16 ">
+      <div className="container max-w-7xl flex items-center justify-center pt-[45rem] pb-[5rem] sm:pt-[35rem] sm:pb-0 md:pt-[12.5rem]
+      lg:pt-[6rem] lg:pb-0">
+        <div className="flex flex-col lg:flex lg:flex-row w-full items-center justify-around ">
           
           {/* Seção de informações do projeto */}
-          <div className="space-y-2 order-2 lg:order-1 mb-32 sm:mb-36">
-            <div>
+          <div className="space-y-4 order-2 lg:order-1  sm:mb-36">
+            <div className="">
               <span className="text-[3.5rem] text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-pink-700 font-bold">
                 {project.id}
               </span>
@@ -103,7 +105,7 @@ const Work: React.FC = () => {
               </h2>
             </div>
 
-            <p className="text-white/80 text-justify justify-center max-w-[350px] md:max-w-[500px]">
+            <p className="text-white/80 text-justify max-w-[350px] md:max-w-[500px]">
               {project.description}
             </p>
 

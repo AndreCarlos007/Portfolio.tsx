@@ -11,7 +11,7 @@ const Page: React.FC = () => {
     // Contêiner principal da página com fundo personalizado e layout responsivo
     <div 
       style={{backgroundImage: "url(/bg-2.AVIF)" }} // Adiciona a imagem de fundo
-      className='flex flex-col lg:flex-row overflow-scroll lg:overflow-hidden items-center justify-center w-screen h-screen bg-cover bg-center text-white gap-10 sm:gap-10 md:gap-8 lg:gap-32 pt-96 pb-20 sm:pt-64 sm:pb-0 lg:pb-0 lg:pt-0 '>
+      className='flex flex-col lg:flex-row overflow-scroll lg:overflow-hidden items-center justify-center w-screen h-screen bg-cover bg-center text-white gap-10 sm:gap-10 md:gap-8 lg:gap-5 pt-96 pb-20 sm:pt-64 sm:pb-0 lg:pb-0 lg:pt-0 '>
         <link
             rel="preload"
             href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
@@ -27,7 +27,7 @@ const Page: React.FC = () => {
             sizes="100vw"
           />
       {/* Seção da biografia */}
-      <div className="max-w-[270px] pt-[47rem] sm:max-w-[320px] md:max-w-[400px] sm:pt-[35rem] md:pt-0 lg:max-w-[400px]">
+      <div className="max-w-[270px] pt-[47rem] sm:max-w-[320px] md:max-w-[400px] sm:pt-[35rem] md:pt-0 lg:max-w-[450px]">
         {/* Título da seção de biografia */}
         <h1 className='text-[1.5rem] pb-3 font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500'>Biography</h1>
         
@@ -55,7 +55,7 @@ const Page: React.FC = () => {
 
       <div className='border-l-2 border-white/60 h-[21rem]'></div>
       {/* Seção da educação */}
-      <div className='w-full pb-24 sm:pt-0 sm:pb-44 md:pb-28 max-w-[290px] sm:max-w-[320px] md:pt-0 md:max-w-[400px] lg:max-w-[350px] lg:pt-16 lg:pb-20'>
+      <div className='w-full pb-24 sm:pt-0 sm:pb-44 md:pb-28 max-w-[290px] sm:max-w-[320px] md:pt-0 md:max-w-[400px] lg:max-w-[450px] lg:pt-16 lg:pb-20'>
         {/* Título da seção de educação */}
         {/* <h1 className='font-bold pb-3 text-[2rem] '>
           My <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500'>Education.</span>
@@ -64,7 +64,7 @@ const Page: React.FC = () => {
         {/* Componente formação academica */}
         <div className='max-w-[400px]'>
           <div className=''>
-            <div className='flex gap-6'>
+            <div className='flex gap-1'>
             <h1 className='text-[1.5rem] font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500 '>Systems Analysis and Development</h1>
             <Image className=' ' src="/certificado.AVIF" alt='certificado' width={120} height={20} />
             </div>

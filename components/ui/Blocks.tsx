@@ -33,7 +33,7 @@ const Blocks = () => {
             animate="animate" // Define o estado de animação
             exit="exit" // Define o comportamento de saída
             transition={{
-              duration: 0.18, // Duração de cada transição
+              duration: 0.12, // Duração de cada transição
               delay: reverseIndex(index) * 0.1, // Calcula o delay com base no índice
               ease: 'easeInOut', // Estilo de transição (inicia lento, acelera e desacelera)
             }}
