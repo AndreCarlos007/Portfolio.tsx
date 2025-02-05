@@ -87,10 +87,10 @@ const Work: React.FC = () => {
   return (
     <main 
       style={{ backgroundImage: "url(/bg-2.AVIF)" }} // Define a imagem de fundo da seção
-      className="flex items-center justify-center min-h-screen w-full bg-cover bg-center p-4"
+      className="flex items-center justify-center min-h-screen w-full bg-cover bg-center p-4 overflow-scroll md:overflow-hidden"
     >
-      <div className="container mx-auto max-w-7xl flex items-center justify-center overflow-scroll md:overflow-hidden">
-        <div className="flex flex-col lg:flex lg:flex-row w-full items-center justify-around mt-16">
+      <div className=" lg:max-w-7xl flex items-center justify-center overflow-scroll md:overflow-hidden">
+        <div className="flex flex-col lg:flex lg:flex-row w-full items-center justify-around mt-16 ">
           
           {/* Seção de informações do projeto */}
           <div className="space-y-2 order-2 lg:order-1 mb-32 sm:mb-36">
@@ -103,7 +103,7 @@ const Work: React.FC = () => {
               </h2>
             </div>
 
-            <p className="text-white/80 text-justify max-w-[500px]">
+            <p className="text-white/80 text-justify justify-center max-w-[350px] md:max-w-[500px]">
               {project.description}
             </p>
 
@@ -127,7 +127,7 @@ const Work: React.FC = () => {
               ))}
             </ul>
 
-            <div className="border border-white/20 max-w-[500px]" />
+            <div className="border border-white/20 max-w-[350px]" />
 
             {/* Links para visualizar o projeto ao vivo e acessar o repositório */}
             <div className="flex gap-4">
