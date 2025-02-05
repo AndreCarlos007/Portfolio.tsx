@@ -53,10 +53,7 @@ const Page: React.FC = () => {
         </div>
       </div>
 
-      <div className="border border-transparent rounded-3xl bg-gradient-to-r from-purple-700 to-red-500/20 p-1">
-    <div className="bg-white h-full w-full rounded-2xl pl-72 sm:pl-80 lg:pl-0 lg:pt-96">
-    </div>
-  </div>
+      <div className='border-l-2 border-white/60 h-[21rem]'></div>
       {/* Seção da educação */}
       <div className='w-full pb-24 sm:pt-0 sm:pb-44 md:pb-28 max-w-[290px] sm:max-w-[320px] md:pt-0 md:max-w-[400px] lg:max-w-[350px] lg:pt-16 lg:pb-20'>
         {/* Título da seção de educação */}
