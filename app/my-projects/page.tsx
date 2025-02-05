@@ -89,7 +89,7 @@ const Work: React.FC = () => {
       style={{ backgroundImage: "url(/bg-2.AVIF)" }} // Define a imagem de fundo da seção
       className="flex items-center justify-center min-h-screen w-full bg-cover bg-center p-4"
     >
-      <div className="container mx-auto max-w-7xl flex items-center justify-center">
+      <div className="container mx-auto max-w-7xl flex items-center justify-center overflow-scroll md:overflow-hidden">
         <div className="flex flex-col lg:flex lg:flex-row w-full items-center justify-around mt-16">
           
           {/* Seção de informações do projeto */}
