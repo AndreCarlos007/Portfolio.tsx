@@ -15,7 +15,7 @@ const stairAnimation = {
 
 // Função para calcular o índice reverso para um efeito de animação em cascata
 const reverseIndex = (index: number) => {
-  const totalStep = 6; // Número total de blocos (passos)
+  const totalStep = 5; // Número total de blocos (passos)
   return totalStep - index - 1; // Reverte o índice para obter o delay inverso
 };
 
@@ -24,7 +24,7 @@ const Blocks = () => {
   return (
     <>
       {/* Mapeia um array de 6 elementos para renderizar 6 blocos animados */}
-      {[...Array(6)].map((_: unknown, index: number) => {
+      {[...Array(5)].map((_: unknown, index: number) => {
         return (
           <motion.div
             key={index} // Usa o índice como chave única para cada bloco

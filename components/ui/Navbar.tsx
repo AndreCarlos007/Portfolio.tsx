@@ -19,7 +19,7 @@ const Navbar = () => {
           </div>
             
           <div className=''>
-          <Link href="/curriculoAndre.pdf" rel="noopener noreferrer" target='_blank' ><Image width={40} height={40} loading='lazy'   src="/curriculum.AVIF" alt="Discord" /></Link>
+          <Link href="/CurriculoAndreCarlos.pdf" rel="noopener noreferrer" target='_blank' ><Image width={40} height={40} loading='lazy'   src="/curriculum.AVIF" alt="Discord" /></Link>
           </div>
             
         </div>

@@ -24,7 +24,7 @@ const TransitionPage: React.FC<TransitionPageProps> = ({ children }) => {
           initial={{ opacity: 1 }} // Estado inicial com opacidade total
           animate={{
             opacity: 0, // Animação para desaparecer (opacidade zero)
-            transition: { delay: 0.58, duration: 0.2, ease: 'easeInOut' }, // Configuração de tempo e estilo de transição
+            transition: { delay: 0.58, duration: 0.05, ease: 'easeInOut' }, // Configuração de tempo e estilo de transição
           }}
           className="h-screen w-screen fixed bg-purple-900 top-0 pointer-events-none z-[101]"
         />

@@ -3,23 +3,15 @@
 import React, { useState, useRef, JSX } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import WorkSliderBtns from '@/components/WorkSliderBts'; // Importa o componente de botões de navegação do slider
 import { Swiper, SwiperSlide } from 'swiper/react';
 import type { Swiper as SwiperType } from 'swiper'; // Importa a tipagem do Swiper para melhor controle.
 import 'swiper/css';
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
-import {
-  TbBrandTypescript,
-  TbBrandTailwind,
-  TbBrandNextjs,
-} from 'react-icons/tb';
+import {TbBrandTypescript,TbBrandTailwind,TbBrandNextjs,} from 'react-icons/tb';
 import { DiHtml5, DiGit } from 'react-icons/di';
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
-import WorkSliderBtns from '@/components/WorkSliderBts'; // Importa o componente de botões de navegação do slider
+import {Tooltip,TooltipContent,TooltipProvider,TooltipTrigger,} from "@/components/ui/tooltip";
+
 
 // Define a interface para os itens da stack tecnológica de cada projeto
 interface StackItem {
