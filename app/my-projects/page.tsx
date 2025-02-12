@@ -115,7 +115,7 @@ const Work: React.FC = () => {
               </h2>
             </div>
 
-            <p className="text-white/80 text-justify max-w-[100vw] mx-5 md:max-w-[500px]">
+            <p className="text-white/80 text-justify max-w-[100vw] mx-1 lg:mx-0 md:max-w-[500px]">
               {project.description}
             </p>
 
