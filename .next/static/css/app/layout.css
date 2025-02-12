@@ -586,6 +586,14 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -715,6 +723,9 @@ video {
 }
 .max-w-screen-2xl {
   max-width: 1536px;
+}
+.max-w-\[100vw\] {
+  max-width: 100vw;
 }
 .flex-1 {
   flex: 1 1 0%;

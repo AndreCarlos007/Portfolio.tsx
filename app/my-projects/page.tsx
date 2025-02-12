@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import type { Swiper as SwiperType } from 'swiper'; // Importa a tipagem do Swiper para melhor controle.
 import 'swiper/css';
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
-import {TbBrandTypescript,TbBrandTailwind,TbBrandNextjs,} from 'react-icons/tb';
+import {TbBrandTypescript,TbBrandTailwind,TbBrandNextjs,TbBrandJavascript, TbBrandFramerMotion} from 'react-icons/tb';
 import { DiHtml5, DiGit } from 'react-icons/di';
 import {Tooltip,TooltipContent,TooltipProvider,TooltipTrigger,} from "@/components/ui/tooltip";
 
@@ -35,6 +35,24 @@ interface Project {
 const projects: Project[] = [
   {
     id: '01',
+    title: 'TCClass',
+    category: 'Full-Stack',
+    description: `Platform for reviewing and correcting theses that combines AI for technical analysis and academic freelancers for 
+    mentorship and personalized support, facilitating fair agreements between students and professors.`,
+    image: '/work/tcclass.png',
+    live: 'https://tc-class-jsx.vercel.app/',
+    github: 'https://github.com/AndreCarlos007/TCClass.jsx',
+    stack: [
+      { icon: <TbBrandNextjs size={60} />, name: 'next' },
+      { icon: <TbBrandJavascript size={60} />, name: 'javascript' },
+      { icon: <TbBrandTailwind size={60} />, name: 'tailwind' },
+      { icon: <TbBrandFramerMotion size={60} />, name: 'framer-motion' },
+      { icon: <DiHtml5 size={60} />, name: 'html5' },
+      { icon: <DiGit size={60} />, name: 'git' },
+    ],
+  },
+  {
+    id: '02',
     title: 'Portfólio André',
     category: 'Front-end',
     description: `Portfolio built with Next.js, TypeScript, and Tailwind CSS, using Swiper, Framer Motion, React Icons, 
@@ -50,7 +68,7 @@ const projects: Project[] = [
       { icon: <DiGit size={60} />, name: 'git' },
     ],
   },
- // tou precisando de mais projetos
+ 
 ];
 
 const Work: React.FC = () => {
@@ -97,7 +115,7 @@ const Work: React.FC = () => {
               </h2>
             </div>
 
-            <p className="text-white/80 text-justify max-w-[350px] md:max-w-[500px]">
+            <p className="text-white/80 text-justify max-w-[100vw] mx-5 md:max-w-[500px]">
               {project.description}
             </p>
 
