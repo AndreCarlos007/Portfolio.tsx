@@ -45,7 +45,7 @@ Este portfólio foi projetado para exibir minhas habilidades, experiência e pro
 ```
 
 ## 🎮 Demonstração.
-O portfólio pode ser acessado [aqui](https://seu-site.vercel.app/) e possui as seguintes seções:
+O portfólio pode ser acessado [aqui](https://andre-portfolio-tsx-rosy.vercel.app/) e possui as seguintes seções:
 - **Sobre Mim**: Apresentação profissional e habilidades principais.
 - **Projetos**: Exibição interativa dos projetos desenvolvidos.
 - **Habilidades**: Tecnologias e ferramentas com as quais trabalho.
